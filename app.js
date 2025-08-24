@@ -29,3 +29,7 @@ function renderTasks() {
 
 // 初期表示
 document.addEventListener('DOMContentLoaded', renderTasks);
+function deleteTask(id) {
+    todos = todos.filter(todo => todo.id !== id);
+    renderTasks();
+}
